@@ -1,0 +1,20 @@
+<h1> New Post </h1>
+
+<%= form_with :model => @post do |form| %>
+
+<p>
+  <% form.label "name", "Place Name" %>
+  <% form.text_field "name" %>
+</p>
+
+<p>
+  <%= form.label "Place Visited" %>
+  <%= form.text_field "Place Visited" %>
+
+</p>
+
+<%=form.submit%>
+
+
+
+<% end %>
